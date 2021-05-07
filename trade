@@ -1,0 +1,14 @@
+#!/bin/bash
+
+EXPATH="/home/sahil/projdir"
+
+cd $EXPATH
+git checkout $1 
+if [ $2 = "gencodes" ]; then
+	python3 gencodes.py
+elif [ $2 = "trade" ]; then
+	python3 trade.py
+else
+	python3 exitorder1.py
+fi
+	
