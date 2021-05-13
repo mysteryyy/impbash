@@ -1,0 +1,5 @@
+#!/bin/bash 
+cd /home/sahil/selfirefox
+
+docker run --env action=$1 -t dock .
+
